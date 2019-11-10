@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script>
+			function a()
+			{
+				
+				with(document.forms.vint)
+				{
+					
+					var f=Number(fno.value);
+					var s=Number(sno.value);
+					
+					//var x=Integer.parseInt(f);
+					//var y=Integer.parseInt(s);
+					
+					var z=x*y;
+					
+					
+					ans.value=z;
+				
+				
+				}	
+				
+			}
+		</script>
+	</head>
+	
+	<body>
+		<form name="vint">
+		First no:<input type="text" name="fno"/>
+		Second no:<input type="text" name="sno"/><br><br>
+		<input type="button" name="add" value="Add" onclick="a()"/>
+		<input type="button" name="sub" value="Sub" onclick="b()"/>
+		<input type="button" name="mul" value="Mul" onclick="c()"/>
+		<input type="button" name="div" value="Div" onclick="d()"/><br><br>
+		Answer:<input type="text" name="ans"/>
+		
+		</form>
+	</body>
+</html>
